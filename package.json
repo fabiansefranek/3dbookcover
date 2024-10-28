@@ -1,0 +1,23 @@
+{
+  "name": "example-bare",
+  "type": "module",
+  "scripts": {
+    "dev": "vinxi dev",
+    "build": "vinxi build",
+    "start": "vinxi start",
+    "preview": "bun run build && npx wrangler pages dev",
+    "deploy": "bun run build && wrangler pages deploy"
+  },
+  "dependencies": {
+    "@solidjs/start": "^1.0.9",
+    "solid-js": "^1.9.2",
+    "vinxi": "^0.4.3"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241022.0",
+    "wrangler": "^3.83.0"
+  }
+}
